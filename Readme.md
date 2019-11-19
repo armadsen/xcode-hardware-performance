@@ -3,20 +3,33 @@ Xcode Hardware Performance
 
 These are the results from running Xcode on a non-trivial open source project using various Macs. The goal is to give developers a relative idea of how each computer model compares to one another. Read the [specifics](#specifications) and [contributing](#contributing) sections for more info.
 
+Xcode 11
+-------
+🖥 | Computer Model | CPU | RAM | Fresh Build Time | Incremental Build Time | Xcode Version | Date & Commit Hash | New Build System? |
+-- | -------------- | --- | --- | ---------------- | ---------------------- | ---- | ---- | ----------------- |
+💻 | MacBook Pro 13",<br /> Retina, Mid 2014, <br />256GB SSD| 2.6 GHz i5-4278U | 8Gb | 1:43 | 0:27 | 11.2 | 2019-11-06 ([commit](https://github.com/artsy/eidolon/commit/67fd72cf1a0f97d1c24db1c78c240414e4180fbd)) | :heavy_check_mark:
+
 Xcode 10
 -------
 
 🖥 | Computer Model | CPU | RAM | Fresh Build Time | Incremental Build Time | Xcode Version | Date & Commit Hash | New Build System? |
 -- | -------------- | --- | --- | ---------------- | ---------------------- | ---- | ---- | ----------------- |
 🖥 | iMac Pro <br />10 Core, Late 2017 | 3 GHz Intel Xeon W | 32 GB | 0:32 | 0:06 | 10.2.1 | 2019-05-16 ([commit](https://github.com/artsy/eidolon/commit/9da107120b64fe73efaecaa4c3ef03e6180ce92f)) | :heavy_check_mark:
+💻 | [MacBook Pro](https://github.com/ashfurrow/xcode-hardware-performance/pull/103) <br />Retina, 15", Mid 2019 | 2.3 GHz i9-9880H | 16 GB | 0:32 | 0:05 | 10.3 | 2019-09-03 ([commit](https://github.com/artsy/eidolon/commit/5d08938cf325c91f0121acfdb11b1de12ddf1b45)) | :heavy_check_mark:
+🖥 | iMac 5K 27",<br /> Early 2019, <br />256GB SSD | 3.0 GHz i5-8500 | 40 GB | 0:38 | 0:08 | 10.3 | 2019-08-07 | :heavy_check_mark:
+🖥 | [iMac 5K 27"](https://github.com/ashfurrow/xcode-hardware-performance/pull/100),<br /> Early 2019, <br />512GB SSD | 3.6 GHz i9-9900K | 16 GB | 0:29 | 0:05 | 10.2.1 | 2019-06-06 ([commit](https://github.com/artsy/eidolon/commit/9da107120b64fe73efaecaa4c3ef03e6180ce92f)) | :heavy_check_mark:
+💻 | [MacBook Pro](https://github.com/ashfurrow/xcode-hardware-performance/pull/99) <br />Touch Bar, 15", Mid 2018 | 2.9 GHz i9-8950HK | 32 GB | 0:43 | 0:06 | 10.2 | 2019-05-27 ([commit](https://github.com/artsy/eidolon/commit/9da107120b64fe73efaecaa4c3ef03e6180ce92f)) | :heavy_check_mark:
+⌨️ | [Custom PC](https://github.com/ashfurrow/xcode-hardware-performance/pull/97)| i9-9900K 3.6 GHz (Stock) | 32 GB | 0:17 | 0:05 | 10.1 |2019-05-23 | :heavy_check_mark:
 🖥 | iMac 5K 27",<br /> Late 2014, <br />1 TB SSD | 4.0 GHz i7-4790K | 32 GB | 0:40 | 0:13 | 10.1 | 2019-03-08 ([commit](https://github.com/artsy/eidolon/commit/9da107120b64fe73efaecaa4c3ef03e6180ce92f)) | :heavy_check_mark:
 💻 | MacBook Pro <br />Retina, 15", Mid 2015 | 2.5 GHz i7-4870HQ | 16 GB | 0:46 | 0:10 | 10.1 | 2019-03-03 ([commit](https://github.com/artsy/eidolon/commit/5d08938cf325c91f0121acfdb11b1de12ddf1b45)) | :heavy_check_mark:
 💻 | MacBook Pro <br />Retina, 15", Mid 2018 | 2,6 GHz i7-8850H | 16 GB | 0:28 | 0:09 | 10.1 | 2019-01-12 ([commit](https://github.com/artsy/eidolon/commit/c4e042680c8cea809b42eb2b1c827a3ea1d780b4)) | :heavy_check_mark:
+💻 | MacBook Pro <br />Retina, 13", Early 2015 | 2.7 GHz i5-5257U | 8 GB | 1:26 | 0:12 | 10.1 | 2019-02-15 ([commit](https://github.com/artsy/eidolon/commit/5d08938cf325c91f0121acfdb11b1de12ddf1b45)) | :heavy_check_mark:
 ⌨️ | [Custom PC](https://github.com/ashfurrow/xcode-hardware-performance/pull/90)| 4.0 GHz i7-8086K | 32 GB | 0:31 | 0:11 | 10.1 | 2019-01-10 ([commit](https://github.com/artsy/eidolon/commit/5d08938cf325c91f0121acfdb11b1de12ddf1b45)) | :heavy_check_mark:
 ![](assets/pro.png) | Mac Pro <br />Flash Storage, Late 2013 | 2.7 GHz 12-Core Xeon E5 | 64 GB | 0:40 | 0:08 | 10.1 | 2018-12-15 ([commit](https://github.com/artsy/eidolon/commit/5d08938cf325c91f0121acfdb11b1de12ddf1b45)) | :heavy_check_mark:
 ![](assets/mini.png) | Mac Mini, <br /> Late 2012 | 2.3 GHz i7-3615QM | 8 GB | 1:05 | 0:14 | 10.1 | 2018-11-15 ([commit](https://github.com/artsy/eidolon/commit/c4e042680c8cea809b42eb2b1c827a3ea1d780b4)) | :heavy_check_mark:
 💻 | MacBook Pro <br />Retina, 15", Mid 2014 | 2.8 GHz i7-4980HQ | 16 GB | 0:49 | 0:09 | 10.1 | 2018-11-16 ([commit](https://github.com/artsy/eidolon/commit/c4e042680c8cea809b42eb2b1c827a3ea1d780b4)) | :heavy_check_mark:
 💻 | MacBook Pro <br />Non-Retina, 13", Mid 2012, <br />180 GB SSD | 2.5 GHz i5-3210M | 16 GB | 2:35 | 0:17 | 10.1 | 2018-11-16 ([commit](https://github.com/artsy/eidolon/commit/c4e042680c8cea809b42eb2b1c827a3ea1d780b4)) | :heavy_check_mark:
+![](assets/mini-2018.png) | Mac Mini, <br /> Late 2018, 256GB SSD | 3.2 GHz i7-8700B | 32 GB | 0:25 | 0:02 | 10.2.1 | 2019-07-02 ([commit](https://github.com/artsy/eidolon/commit/9da107120b64fe73efaecaa4c3ef03e6180ce92f)) | :heavy_check_mark:
 ![](assets/mini-2018.png) | Mac Mini, <br /> Late 2018, 512GB SSD | 3.2 GHz i7-8700B | 16 GB | 0:32 | 0:07 | 10.1 | 2018-11-15 ([commit](https://github.com/artsy/eidolon/commit/c4e042680c8cea809b42eb2b1c827a3ea1d780b4)) | :heavy_check_mark:
 ![](assets/mini-2018.png) | Mac Mini, <br /> Late 2018, 256GB SSD | 3.0 GHz i5-8500B | 8 GB | 0:42 | 0:08 | 10.1 | 2018-11-15 ([commit](https://github.com/artsy/eidolon/commit/c4e042680c8cea809b42eb2b1c827a3ea1d780b4)) | :heavy_check_mark:
 💻 | MacBook Pro <br />Retina, 15", Mid 2018 | 2.2 GHz i7-8750H | 16 GB | 0:35 | 0:08 | 10.1 | 2018-11-16 ([commit](https://github.com/artsy/eidolon/commit/c4e042680c8cea809b42eb2b1c827a3ea1d780b4)) | :heavy_check_mark:
